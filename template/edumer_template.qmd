@@ -318,7 +318,17 @@ En base al texto de @pérez2012cuban: The Cuban Revolution: Origins, Course and 
 
 ::::
 :::::
-# Gracias por su atención! 
+
+## Algunos alcances
+::::: {.incremental .highlight-last style="font-size: 130%;"}
+
+1. ¿Cómo abordar MR y R que no apuntan a la _toma_ o _ruptura_ del poder Estatal? y
+2. ¿Agota la perspectiva centrada en el Estado las reivindicaciones y horizontes de los MR? [@wright2020envisioning]
+
+:::::
+
+
+# ¡Gracias por su atención! 
 
 
 ## Referencias
