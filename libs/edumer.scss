@@ -12,7 +12,7 @@ $backgroundColor: #ffffff;
 
 // Primary/body text
 $mainFont: 'Noto Serif', sans-serif; /* Updated font */
-$mainFontSize: 30px;
+$mainFontSize: 27px;
 $mainColor: #272828;
 
 // Vertical spacing between blocks of text
@@ -21,7 +21,7 @@ $blockMargin: 20px;
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'Roboto', Impact, sans-serif; /* Updated font */
-$headingColor: #D91A2A;
+$headingColor: #c30b4e;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
@@ -30,7 +30,7 @@ $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
 
-$heading1Size: 3.00em;
+$heading1Size: 2.80em;
 $heading2Size: 2.11em;
 $heading3Size: 1.55em;
 $heading4Size: 1.00em;
@@ -38,11 +38,11 @@ $heading4Size: 1.00em;
 $codeFont: monospace;
 
 // Links and actions
-$linkColor: #F27983;
+$linkColor: #00cece;
 $linkColorHover: $headingColor;
 
 // Text selection
-$selectionBackgroundColor: #F27983;
+$selectionBackgroundColor: #00cece;
 $selectionColor: #fff;
 
 // start using css here
@@ -152,7 +152,7 @@ $selectionColor: #fff;
 
 
 .content-box-red {
-	background-color: #f9dbdb;
+	background-color: #F2A0A7;
 }
 
 .content-box-yellow {
@@ -176,7 +176,7 @@ $selectionColor: #fff;
 .gray { color: #758686; }
 .grey { color: #F2A0A7; }
 .white{ color: white; }
-.red2 { color: #D91A2A;}
+.red2 { color: #c30b4e;}
 
 
 .bold { font-weight: bold; }
@@ -246,6 +246,20 @@ iframe {
 .section-title-inv-4 h1 {
   color: #E0343E;
 }
+
+
+
+.box-inv-3,
+.section-title-inv-3 {
+  background-color: #fef5c4;
+}
+
+.box-inv-3,
+.title-inv-3 h1,
+.section-title-inv-3 h1 {
+  color: #E0343E;
+}
+
 
 
 .left-column2 {

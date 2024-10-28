@@ -1,5 +1,5 @@
 ---
-pagetitle: "EDUMER Template"
+pagetitle: "Presentación SOL3003"
 Author: Equipo EDUMER
 bibliography: "../input/bib/refs.bib"
 csl: "../input/bib/apa6.csl"
@@ -40,66 +40,36 @@ knitr::opts_chunk$set(echo = F,
                       message = F) 
 ```
 
-```{r}
-#| label: packages
-#| include: false
-
-if (! require("pacman")) install.packages("pacman")
-
-pacman::p_load(tidyverse, 
-               sjmisc, 
-               sjPlot, 
-               sjlabelled, 
-               here,
-               kableExtra,
-               ggdist,
-               summarytools)
-
-options(scipen=999)
-rm(list = ls())
-```
-
-
-```{r}
-#| label: data
-#| include: false
-
-load(url("https://github.com/educacion-meritocracia/market-justice-preferences-school/raw/refs/heads/main/input/data/mlm_models.RData"))
-load(url("https://github.com/educacion-meritocracia/market-justice-preferences-school/raw/refs/heads/main/input/data/dependientes.RData"))
-
-```
 
 
 ::: columns
-::: {.column width="15%"}
+::: {.column width="25%"}
 
-![](images/coes.png)
-
-
-
-![](images/edumer.png)
+![](images/logo_isuc.png)
 
 
 :::
 
-::: {.column .column-right width="85%"}
+::: {.column .column-right width="75%"}
 <br>
 
-## **Mi increíble presentación**
+## **No Other Way Out: States and Revolutionary Movements 1945-1991**
+
+## **Jeff Goodwin (2001)**
 
 ------------------------------------------------------------------------
 
-**Autores**
-
-##### Afiliaciones
+**Andreas Laffert Tamayo**
 
 ::: {.red2 .medium}
+**Instituto de Sociología, Pontificia Universidad Católica de Chile**
 
-**FONDECYT No. 1210847 "Meritocracia en la escuela: fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile"**
+**Sociología Comparada (SOL-3003)**
+**Prof. Dr. Felipe Sánchez**
 
 :::
 
-Conferencia X
+lunes, 28 de octubre de 2024
 
 :::
 :::
@@ -109,141 +79,246 @@ Aquí mis notas
 :::
 
 
-# Contexto y motivación {.xlarge}
+## Contexto y motivación
+::: {.incremental .highlight-last style="font-size: 150%;"}
 
 
+- Las revoluciones han sido la forma de conflicto político más consecuente en el siglo XX.
 
+- Guerra Fría, revoluciones y movimientos revolucionarios en el Tercer Mundo (1945-1991).
 
-## Antecedentes
-
-::: {.incremental .highlight-last style="font-size: 100%;"}
-
-- The justification of social inequality based on market-type criteria has been conceptualized as the individuals' adherence to the deservingness of social goods and services (such as health, education, and pensions) based on prices and individuals' ability to pay [@boltanski_new_2005; @lane_market_1986; @streeck_citizens_2012].
-
-- Research on social stratification beliefs [@kluegel_beliefs_1987], highlights that people's explanations and justifications of social inequality are closely tied to their judgments of deservingness. 
-
--  The expansion of marketization has been related to a larger justification of market mechanisms, whereby societies with larger private spending on services show larger market justice preferences [@lindh_public_2015].
+- Inscrito en una línea de estudios que comparan revoluciones y movimientos revolucionarios para entender sus similitudes y diferencias en sus causas, procesos y logros [@tilly1978mobilization; @skocpol1979states].
 
 :::
 
-## Antecedentes
+
+## Pregunta, objetivo e hipótesis {data-background-color="#5f5758"}
+
+:::: {.incremental style="font-size: 115%;"}
+
+
+
+_¿Por qué los movimientos revolucionarios radicales se convirtieron en fuerzas importantes en algunas sociedades perífericas pero no en otras durante la Guerra Fría? ¿y por qué algunos de estos movimientos, pero no todos, derrocaron con éxíto a los Estados a los que se enfrentaban? [-@goodwin_no_other_way_out_2001, p.8]_
+
+
+
+::: {.box-inv-4}
+
+
+Comprender la formación (o ausencia) y subsecuente destino de movimientos revolucionarios radicales en sociedades périfericas durante la era de la Guerra Fría
+
+::: 
+
+
+
+::: {.box-inv-3}
+
+La formación y trayectoria de los MR depende, larga pero no enteramente, de la configuración del Estado nacional al que se enfrentan.
+
+::: 
+::::
+
+
+
+
+## Método comparado
+
+:::: {style="font-size: 110%;"}
 
 ::::: columns
-::: {.column width="50%" .content-box-red}
+::: {.column width="50%" }
 
-#### A
+**Muestra de casos**
 
-- The original definition of merit is a combination of effort and talent [@young_rise_1958]
-- 2
-- 3
+- Sudeste Asíatico (1945-55): Vietnam, Indonesia, Filipinas y Malaya
+- Centroamérica (1970-80): Nicaragua, El Salvador, Guatemala y Honduras
+- Europa del Este (1989): Países del bloque Soviético
+
 
 :::
 
-::: {.column width="50%" .content-box-yellow}
+::: {.column width="50%"}
 
-#### B
+**Justificación**
 
-- Adolescents from low-socioeconomic-status families are likelier to have an egalitarian fairness view and consider an equal distribution as fair in a situation with unequal merits [@almas_fairness_2017]
-- 2
-- 3
+- R y MR que ocurrieron únicamente durante la Guerra Fría
+- Países periféricos del Tercer Mundo que experimentaron ciclos revolucionarios/protesta
+- Casos exitosos y no exitosos
 
 :::
 :::::
 
-## Hipótesis
+::: {.box-inv-4}
+
+Conjunto mayormente homogéneos --> Descubrir los procesos causales que mayormente explican las diferencias de un caso de otro
+
+:::
+::::
+
+
+## Algunas definiciones conceptuales
+
+::: {.incremental .highlight-last style="font-size: 130%;"}
+
+1. Revolución: toda instancia en la que un Eº o regimen político es derrocado/superado y, en consecuencia, transformado por un movimiento popular de una manera irregular por fuera del Eº (def. amplia) [@goodwin_no_other_way_out_2001, p.9]
+2. Movimientos revolucionarios: un tipo especial de movimiento social que promueve reivindicaciones competidoras exclusivas para el control del Eº o algun segmento [@goodwin_no_other_way_out_2001, p.10]
+3. Estado: organización(es) que intenta monopolizar el uso legítimo de la violencia en un territorio y reclama el derecho de hacerlo [@goodwin_no_other_way_out_2001, p.12]
+
+:::
+
+## Algunas definiciones conceptuales
+
+::: {.incremental .highlight-last style="font-size: 130%;"}
+
+
+4. Poder infraestructural del Eº: _poder para_ del Eº para llevar a cabo sus proyecciones [@goodwin_no_other_way_out_2001, p.11]
+5. Eº periférico: Eº cuyo poder y proyecto se encuentra constreñido en ciertos grados por otro(s) Eº más poderoso(s) [@goodwin_no_other_way_out_2001, p.14]
+6. Sociedad periférica: sociedad nacional governada por un Eº perférico [@goodwin_no_other_way_out_2001, p.14]
+
+
+:::
+
+
+## Contexto político
 
 ::: {.incremental .highlight-last style="font-size: 100%;"}
 
-$H_{1}$
+- Crítica a las perspectivas de la modernización y marxistas sobre los MR y R
+- Se define como las maneras en que una sociedad se _relaciona_ con su Eº nacional: _Es un campo de fuerza que media otros factores_ [@goodwin_no_other_way_out_2001]
 
-$H_{2}$
+![](images/EJE.png)
 
-$H_{3}$
 
-$H_{n}$
+:::
+
+## State-centered perspective
+
+::: {.incremental .highlight-last style="font-size: 115%;"}
+
+
+- Esta perspectiva enfatiza un conjunto particular de mecanismos causales donde el Eº configura, habilita o constriñe fenomenos económicos, sociales y culturales _(one-sided)_
+- Las R y MR tienen en su brújula el poder del Estado 
+- MR emergen solo en oposición o respuesta a Eº que están configurados y actúan de determinada forma...
+- Ciertas estructuras y prácticas de los Eº activamente _construyen las condiciones o contribuyen a_ la formación y trayectoria de MR
+
+::: {.box-inv-4}
+
+- _"Mi afirmación es que los MR son en gran medida artefactos o productos de contextos políticos históricamente contingentes" [@goodwin_no_other_way_out_2001, p.25]_
+::: 
 
 
 ::: 
 
-# Datos, variables y métodos {.xlarge}
+## State-centered perspective
 
-## Datos
+::: {.incremental .highlight-last style="font-size: 110%;"}
 
-::: {.incremental .highlight-last style="font-size: 100%;"}
--   Datos
+**Cuatro perspectivas**
+
+1. Autonomía del Eº 
+2. Capacidad del Eº 
+3. Oportunidades políticas 
+
+::: {.box-inv-4}
+4. Construccionismo de Eº 
+  → los Eº configuran diversas fuerzas sociales e instituciones, identidades, lazos sociales e ideas que ayudan a hacer cognitiva y moralmemente plausible ciertos tipos de acciones colectivas (por ejemplo, radicales)
 :::
-
-## Variables
-
-```{r}
-#| label: tbl-desc-dependientes
-#| tbl-cap: "Variables dependientes"
-#| results: asis
-#| echo: false
-
-df<-dfSummary(dependientes,
-               plain.ascii = FALSE,
-               style = "multiline",
-               tmp.img.dir = "/tmp",
-               headings = F,  # encabezado
-               varnumbers = F, # num variable
-               labels.col = T, # etiquetas
-               na.col = F,    # missing
-               graph.col = F, # plot
-               valid.col = T) # n valido
-
-df$Variable <- NULL # delete variable column
-
-print(df)
-```
 
 :::
 
-## Métodos
 
-- Métodos
+## State-centered perspective
 
+::: {.incremental .highlight-last style="font-size: 115%;"}
 
-# Resultados {.xlarge }
+- La R toma lugar cuando no hay otra salida: especialmente ante Eº que reprimen de manera violenta e indiscriminada el disenso político
 
+- La manera en que el Eº tolera, reprime o promueve el disenso político es crucial para determinar por qué surgen determinados MR y sus logros 
 
-## Modelos 
-::: {style="font-size: 100%;"}
+- La emergencia de MR en el Tercer Mundo ha sido facilitada (no intensional) e incluso alentada por un conjunto de Eº autoritarios violentos y excluyentes que, además, son organizacionalmente incoherentes y militarmente débiles
 
-```{r}
-#| label: fig-lineal-reg
-#| fig-cap: "Linear mixed-effects models for meritocracy perception and market justice preferences"
-#| fig-cap-location: top
-#| fig-align: center
-#| out-width: '80%'
-#| echo: false
-#| warning: false
-#| message: false
-#| results: asis
-
-theme_set(theme_ggdist())
-
-sjPlot::plot_model(model = reg1_bienestar, show.values = T, show.p = T)
-
-```
 
 :::
 
-# Discusión y conclusiones {data-background-color="#5f5758"}
+## State-centered perspective
 
 
-# Discusión y conclusiones {data-background-color="#5f5758"}
 
-::: { .incremental .highlight-last2 style="font-size: 100%;"}
+![](images/e1.png)
 
-- Discusión 
 
-  - Conclusión
+
+## State-centered perspective
+
+![](images/e2.png)
+
+
+## State-centered perspective
+
+
+
+![](images/e3.png)
+
+
+## State-centered perspective
+![](images/e4.png)
+
+
+## State-centered perspective
+::::: {.incremental .highlight-last style="font-size: 115%;"}
+
+:::: columns
+::: {.column width="50%" }
+
+**Fortalezas**
+
+- Centralidad en el poder y ruptura del Eº
+
+
+- Formación de los movimientos revolucionarios
+  
+
 :::
 
+::: {.column width="50%"}
 
+**Debilidades**
+
+- Redes asociativas _(análisis de redes sociales)_
+- Recursos materiales _(teoría de mobilización de recursos)_
+- Creencias colectivas e identidades _(framing processes)_
+
+:::
+::::
+
+:::::
+## Caso empírico: Revolución Cubana
+::::: {.incremental style="font-size: 100%;"}
+
+
+:::: columns
+::: {.column width="70%" }
+
+
+![](images/fidel.jpg)
+En base al texto de @pérez2012cuban: The Cuban Revolution: Origins, Course and Legacy.
+
+
+:::
+
+::: {.column width="30%"}
+
+
+- Eº sin autonómia de USA
+- Crisis de autoridad política del "Batisto"
+- Débilidad estructural de las clases dominantes
+- Liberación nacional
+
+:::
+
+::::
+:::::
 # Gracias por su atención! 
 
--   **Github del proyecto:** <https://github.com/educacion-meritocracia>
 
 ## Referencias
